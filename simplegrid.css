@@ -1,61 +1,96 @@
-.container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
- h1{
-   text-align: left;
- }
- body{
-   background-color:coral;
- }
+.box-bg{
+  height: 400px;
+  padding: 5px;
+  margin: 10px auto;
+  border: 10px solid black;  
+  background-size:cover;
+  background-color: yellowgreen;
+  text-align: left;
+} 
 
-table {
-    width:100%;
-  }
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-  th, td {
-    padding: 15px;
-    text-align: left;
-  }
-
-  .places{
-    /* box-model*/
-    border: 5px solid;
-    padding: 1em;
-    margin: 1em;
-    margin-left: 0em;
-    margin-bottom: 0.5em;
-    border-radius: 0.5em;
+.pictur{
+height: 200px;
+padding: 5px;
+margin: 10px auto;
+border: 5px solid blueviolet;  
 }
-.box{
-     /* box-model*/
-     border: 5px solid;
-     padding: 1em;
-     margin: 1em;
-     margin-left: 0em;
-     margin-bottom: 0.5em;
-     border-radius: 0.5em;
-}
-  .place1{
-    /*background-color:#e76f51;*/
-    flex: 2
- }
 
- .place2{
-     /*background-color:#2a9d8f;*/
-     flex: 2
- }
- .place3{
-     /*background-color: #e9c46a;*/
-     flex: 2
- }
- @media (min-width: 960px){
-    .places{
-        display: flex;
-    }
+.table, th, td {
+border: 1px solid black;
+font-size:30px;
+}
+
+.box-bg2{
+height: auto;
+padding: 5px;
+margin: 10px auto;
+border: 10px solid black;  
+background-size:cover;
+background-color: yellowgreen;
+text-align: left;
+} 
+
+/* ---HomePage--- */
+.index-page .box-content23.box-1 {margin-top: -300px;}
+@media(max-width:767px){
+.index-page .box-content23.box-1 {margin-top: 0;}
+}
+.box-content23.box-1 .box-item:hover img{opacity: 0.9;} 
+.box-content23.box-1 .box-item img {width: 100%;}
+.box-content23.box-1 .box-item a{color: #0aac8e;font-weight: bold;}
+.box-content23.box-1 .box-item .content h3{font-weight: 500;color: #333;font-size: 24px;margin-bottom: 20px;} 
+.box-content23.box-1 .box-item .content span{color: #bbb;font-size: 15px;} 
+
+@media(max-width:767px){
+}
+
+/* ----------------- */
+/* ---flex box--- */
+
+@media(min-width:468px){
+  .container-1{
+    display:flex;
+    /*
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items:center;
     
+    flex-direction:column;
+    */
+    
+  }
+  .container-2{
+      display:flex;  
+      padding:0rem;
+    }
+}
+
+.container-3{
+  display:flex;  
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+ .container-1 div, .container-2,.container-3 div{
+   border:0px #ccc solid;
+  padding:0.5px; 
+} 
+/* ---boxes--- */
+.box-1{
+  flex:1;
+  order:1;
+}
+
+.box-2{
+  flex:1;
+  order:2;
+}
+
+.box-3{
+  flex:1;
+  order:3;
+}
+
+.container-3-box{
+  flex-basis:12%;
 }
